@@ -235,25 +235,23 @@
 <h4>Week 3</h4>
 <hr class="hr-secondary">
 <p>
-    So i was able to throw up an instance of Farmbot Inc's WebApp on the polytechnic staging pool with thanks to the extremely helpful lee in operations and security. This unfortunately, was not without its foibles. as is there seems to be a problem with the inherent CSP protections on default browsers such as chrome and Firefox that dose not allow the user to run JS files within the window, perhaps also steaming from the lack of HTTPS currently employed. No matter, a couple settings disabled and the first page is visible! next hurdle required some config hunting to re jig the web-kit development environment to serve content to the IP address and not localhost. so its sort of working... a bit rickety so I'm not optimistic on how the Raspberry PI is going to go...
+    So i was able to throw up an instance of Farmbot Inc's WebApp on the polytechnic staging pool with thanks to the extremely helpful lee in operations and security. This unfortunately, was not without its foibles. as is there seems to be a problem with the inherent CSP protections on default browsers such as chrome and Firefox that dose not allow the user to run JS files within the window, perhaps also stemming from the lack of HTTPS currently employed by the web-app in its current form. No matter, a couple settings disabled and the first page is visible! next hurdle required some config hunting to re jig the web-kit development environment to serve content to the IP address and not localhost. so its sort of working... a bit rickety so I'm not optimistic on how the Raspberry PI is going to go...
 </p>
 <img src="photos/" class="img-responsive" alt="">
 <hr>
 <h4>Week 4</h4>
 <hr class="hr-secondary">
 <p>
-    Alright, this wasn't exactly a surprise, although, i did intend on seeing the Raspberry PI connect to the Farmbot hosted servers. throughout the day me and Sam have to no avail been able to connect the PI up to either server. first obstacle being that of the wifi and its single sign on predicament, as the PI needs to use the OP network but cant log onto the network with a specific users credentials. Sam in his experience informs me that the guest network is also not an option. another band-aid can be placed on this briefly with the use of Ethernet although i doubt anyone wants to run a cable from D block to the garden. I suppose its time to brainstorm a bit.
+    Alright, this wasn't exactly a surprise, although, i did intend on at the very least, seeing the Raspberry PI connect to the Farmbot hosted servers. Throughout the day me and Sam have to no avail been able to connect the PI up to either server. first obstacle being that of the OP WIFI network and its single sign on predicament, as the PI needs to use the OP intranet but cant log onto the network with a specific users credentials. Sam in his software engineering experience informs me that the guest network is also not an option. another band-aid can be placed on this briefly with the use of the PI's Ethernet port, although i doubt anyone wants to run a cable from D block to the garden. I suppose its time to brainstorm a bit.
 </p>
 <img src="photos/" class="img-responsive" alt="">
 <hr>
 
 <h4>Week 5</h4>
 <hr class="hr-secondary">
-<p>
-    As required in this Project we are to complete 4 Professional development activities. For my first I decided to see what the all the hoopla surrounding the CodeCraft meet up was about. professional indeed i could barely keep up with most of the talks in progress, but there were some great presentations and knowledgeable peoples dishing out some intriguing take home messages. first a man representing NZ Tech spoke of the organization and how it was enveloping many tech companies in Christchurch and the north island and extended invitations to any Dunedin companies interested. the next was a perplexing talk on self written modules in JavaScript for websites (most if not all went above my head) the last presentation educated us on whether or not re writing your code on older projects is worth the effort once certain considerations are taken into account. Certainly a great environment to get amongst, not just for the presentations offered but the amount of IT professionals present in the room would prove for amazing networking, help and support in whatever project you had underway.
-
-    * implemented new version of server to fix XSS issues
-</p>
+    <p>As required in this Project we are to complete 4 Professional development activities. For my first I decided to see what the all the hoopla surrounding the CodeCraft meet up was about. professional indeed i could barely keep up with most of the talks in progress, but there were some great presentations and knowledgeable peoples dishing out some intriguing take home messages. first a man representing NZ Tech spoke of the organization and how it was enveloping many tech companies in Christchurch and the north island and extended invitations to any Dunedin companies interested. the next was a perplexing talk on self written modules in JavaScript for websites (most if not all went above my head) the last presentation educated us on whether or not re writing your code on older projects is worth the effort once certain considerations are taken into account. Certainly a great environment to get amongst, not just for the presentations offered but the amount of IT professionals present in the room would prove for amazing networking, help and support in whatever project you had underway.</p>
+    <p> * So as it turns out Farmbot Inc update their software regularly. Keeping true to their word the software is open-source (Hardwares a different story) luckily we weren't the only ones having cross site scripting browser issues and the issue was resolved promptly after making adjustments to their webpack implementation. After a good ol' fresh from the press instillation was complete on our own servers the web-app was golden, although its still early days to say anything in regards to the raspberry pi connectivity.</p>
+    <p>Meanwhile in the background of the Farmbot lair keys collided with fingertips to produce a mass of documents outlining hardware specifications and the costs associated, this, i knew was going to be the largest challenge the group would face.  </p>
 <img src="photos/" class="img-responsive" alt="">
 <hr>
 
@@ -312,13 +310,13 @@
 <hr class="hr-secondary">
     <p>* Knew that in terms of work commitment i had been laking in the holidays and was set on delivering more quality and quantity of work in the next half of the semester.</p>
     <p>* me and Sonny were plucked from the project room and sat in the meeting room and given a rather intriguing proposition to build boxie.</p>
-    <p>* Adon and Vaughn suggest the idea and making it with micro-controllers and raspberry pi, i go back to the project room brainstorm some ideas on how this can work on some pad and on the net. I realize we are going to need a bunch of extra things like camera, lights, speaker etc. Understanding with first hand experience how there is no room in the time frame for that kind of budgeting or build operation i raise the point of using a red bot and android smart phone to work in tandem. I feel i warm everyone up to the idea because it makes the job more realistic in the timeframe. we start to work on that idea.</p>
+    <p>* Adon and Vaughn suggest the idea and making it with micro-controllers and raspberry pi, i go back to the project room brainstorm some ideas on how this can work on some pad and on the net. I realize we are going to need a bunch of extra things like camera, lights, speaker etc. Understanding with first hand experience how there is no room in the time frame for that kind of budgeting or build operation i raise the point of using a red bot and android smart phone to work in tandem. I feel i warm everyone up to the idea because it makes the job more realistic in the time-frame. we start to work on that idea.</p>
 <img src="photos/" class="img-responsive" alt="">
 <hr>
 
 <h4>Week 14</h4>
 <hr class="hr-secondary">
-    <p>* throught the weekend i work on an intresting way to utilise all the smartphones inbuild sensers such as the facetracker app.</p>
+    <p>* throughout the weekend i worked on an interesting way to utilize some of the smart phones inbuilt sensors and software such as the face-tracker app.</p>
     <p>* meet with nigel the man who prompted the groups creation to guage what he would like.</p>
     <p>* PROFESSIONAL DEVELOPMENT talk with the farmbot group to students as they walk in about the project.</p>
 <img src="photos/" class="img-responsive" alt="">
@@ -364,6 +362,15 @@
     <p>* So i get to work on the new body and it turns out okay, Adon was right, it looks a lot cleaner.</p>
     <p>* i fashion up some more cardboard peripherals to help contain the batteries on the back of dot, and attach the new head to the new servo mount with glue. I sure hope it remains attached, its really quite perplexing to find a structurally sound solution to something made of paper on a $0 budget.</p>
     <p>* After gluing the battery-pack on I ran DOT around the pen with all her limbs attached. For the most part i think it was running well enough, although, i couldn't help notice small twitches coming from the head mounted servo, that wasn't completely center... im holding onto the hope it was resulting in this because the body wasn't actually fixed to the red bot frame yet. I sure hope things don't pan out in the same manner as last time.</p>
+
+<img src="photos/" class="img-responsive" alt="">
+<hr>
+<h4>Showcase</h4>
+<hr class="hr-secondary">
+    <p> * turned out better than i could have thought.
+        * boxies head problem / was able to mitigate it for the duration of showcase
+        * great to see the other students work
+        * i felt my web app was popular enough / then it gets grilled by 2 graduates and adon at the same time</p>
 
 <img src="photos/" class="img-responsive" alt="">
 <hr>
