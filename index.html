@@ -235,9 +235,12 @@
 <h4>Week 3</h4>
 <hr class="hr-secondary">
 <p>
-    So I was able to throw up another instance of Farmbot Inc's WebApp on the polytechnic staging pool with thanks to the extremely helpful lee in operations and security. This unfortunately, was not without its foibles. As is there seems to be a problem with the inherent CSP protections on default browsers such as chrome and Firefox that dose not allow the user to run JS files within the window, perhaps also stemming from the lack of HTTPS currently employed by the web-app in its current form. No matter, a couple settings disabled and the first page is visible! next hurdle required some config hunting to re jig the web-kit development environment to serve content to the IP address and not localhost. so its sort of working... a bit rickety so I'm not optimistic on how the Raspberry PI is going to go...
+    So I was able to throw up another instance of Farmbot Inc's WebApp on the polytechnic staging pool with thanks to the extremely helpful lee in operations and security. This unfortunately, was not without its foibles. As is there seems to be a problem with the inherent cross site scripting (XSS) protections on default browsers such as chrome and Firefox that dose not allow the user to run JS files within the window, perhaps also stemming from the lack of HTTPS currently employed by the web-app in its current form. No matter, a couple settings disabled and the first page is visible! next hurdle required some config hunting to re jig the web-kit development environment to serve content to the IP address and not localhost. so its sort of working... a bit rickety so I'm not optimistic on how the Raspberry PI is going to go...
 </p>
-<img src="photos/" class="img-responsive" alt="">
+<b><p>"New server implementation up and running"</p></b>
+<img src="photos/serverup.PNG" class="img-responsive" alt="">
+<b><p>"Finding some breadcrumbs to the underlying problem"</p></b>
+<img src="photos/xss.png" class="img-responsive" alt="">
 <hr>
 <h4>Week 4</h4>
 <hr class="hr-secondary">
@@ -252,28 +255,36 @@
     <p>As required in this Project we are to complete 4 Professional development activities. For my first I decided to see what all the hoopla surrounding the CodeCraft meet up was about. Professional indeed I could barely keep up with most of the talks in progress, but there were some great presentations and knowledgeable peoples dishing out some intriguing take home messages. First a man representing NZ Tech spoke of the organization and how it was enveloping many tech companies in Christchurch and the north island and extended invitations to any Dunedin companies interested. The next was a perplexing talk on self written modules in JavaScript for websites (most if not all went above my head) the last presentation educated us on whether or not re writing your code on older projects is worth the effort once certain considerations are taken into account. Certainly a great environment to get amongst, not just for the presentations offered but the amount of IT professionals present in the room would prove for amazing networking, help and support in whatever project you had underway.</p>
     <p>So as it turns out Farmbot Inc update their software regularly. Keeping true to their word of open-source software (Hardwares a different story) luckily we weren't the only ones having cross site scripting browser issues and the issue was resolved promptly after making adjustments to their webpack implementation. After a good ol' fresh from the press instillation was complete the web-app was golden, although its still early days to say anything in regards to the raspberry pi connectivity.</p>
     <p>Meanwhile in the background of the Farmbot lair keys collided with fingertips to produce a mass of documents outlining hardware specifications and the costs associated, this, we knew, was going to be the largest challenge the group would face, budget restrictions.</p>
-<img src="photos/" class="img-responsive" alt="">
+<b><p>"Login page for Farmbot Web Application"</p></b>
+<img src="photos/success.PNG" class="img-responsive" alt="">
 <hr>
 
 <h4>Week 6</h4>
 <hr class="hr-secondary">
     <p>To circumvent some of our budgeting problems we spoke to Epicenter over in Engineering block to help us create some aluminum parts and 3D printed peripherals. After a short volley of emails our project leader Rob had set up a time in which I would accompany him in talking to the heads of Epicenter. First however there was a small course that needed completing, preaching the safety precautions that must be adhered to within the building. with the precursor paperwork completed we discussed Farmbots needs and the ways in which we could utilize Epicenters help.</p>
+<b><p>"The MakerBot to make our bot"</p></b>
+<img src="photos/printer.JPG" class="img-responsive" alt="">
     <p>Employing Laiken to accompany me to the engineering block as he had been viewing and archiving the various auto-cad files associated with the manufacture of Farmbot, we handed over the files and Epicenter got under way.</p>
     <p>After some strenuous configuration and thinking it may be a MQTT protocol issue associated with OP's network, me and Sam finally connect the Raspberry pi! As great as this is we still don't have anything else relating to the electronic hardware that communicates through the server such as the motors/drivers/ramps shield.</p>
-<img src="photos/" class="img-responsive" alt="">
+<b><p>"Connected but not quite useful"</p></b>
+<img src="photos/move.PNG" class="img-responsive" alt="">
 <hr>
 
 <h4>Week 7</h4>
 <hr class="hr-secondary">
     <p>I wander over to Epicenter to inspect the progress and find there was a <u>small</u> problem with the 3D Printing. Although not a particularly <u>large</u> issue ;) as these will be utilized only when the gantry and sides have been completed</p>
-    <img src="photos/" class="img-responsive" alt="">
-    <p>Whilst I was present in the building I retrieved some aluminum parts, such as the extrusion mounts and motor enclosures. Still not particularly useful yet without the extrusions and the fixtures to mount everything together but I could start to see the overall picture of Farmbot start to form</p>
-<img src="photos/" class="img-responsive" alt="">
+<b><p>"What is this?? a Farmbot for ants?"</p></b>
+<img src="photos/smallproblem.JPG" class="img-responsive" alt="">
+    <p>Whilst I was present in the building I retrieved some aluminum parts, such as the extrusion mounts and motor enclosures. Still not particularly useful yet without the extrusions and the fixtures to mount everything together but with the box knocked together I could start to see the overall picture of Farmbot start to form</p>
+<b><p>"Base of Farmbot (weights used in vein attempt to straighten out the box)"</p></b>
+<img src="photos/farmbotpen.JPG" class="img-responsive" alt="">
 <hr>
 
 <h4>Week 8</h4>
 <hr class="hr-secondary">
     <p>With not a great deal to do without more parts and the budgeting battle of 2018 still rife with conflict, I decided to create a Farmbot Blog so we may spin up some entries and show anyone who may be interested in our very slow progress what we have been doing</p>
+<b><p>"Farmbot blog structure"</p></b>
+<img src="photos/farmbotblog.png" class="img-responsive" alt="">
     <p>Looking ahead into the future me and Rob decided to take the initiative and seek some alternative funding sources. We combed the Dunedin councils literature for anything pertaining to grants given to community projects. We came across a few sections detailing that there was indeed an option for community projects that fit well within our parameters and that it may be a plausible benefactor for Farmbot. We drove down to the council building to pencil in an appointment</p>
 <img src="photos/" class="img-responsive" alt="">
 <hr>
@@ -282,7 +293,8 @@
 <hr class="hr-secondary">
     <p>Still waiting on funding and fundamental parts for server and Farmbot operation I hook up the raspberry pi to the server then connect the mega to a breadboard full of L.E.D's in hopes of understanding which digital pins correlate with what Farmbot action by observing the L.E.D's response to the servers interaction, whether it be gantry movement or peripheral operation.</p>
     <p>Just when I thought we had been able to successfully connect the raspberry pi and Web App together connecting the mega and pi to server turned out to be exceedingly difficult. after a plethora of failed attempts the raspberry pi fails to communicate entirely with the Web App and I am very unsure which link of the chain is going wrong. </p>
-<img src="photos/" class="img-responsive" alt="">
+<b><p>"Current electronic components Featuring LORA WAN"</p></b>
+<img src="photos/leds.JPG" class="img-responsive" alt="">
 <hr>
 
 <h4>Week 10</h4>
@@ -306,15 +318,15 @@
 
 <h4>Week 13</h4>
 <hr class="hr-secondary">
-    <p>Only after the break I truly understood that in terms of work commitment I had been laking before and within the holidays, and it was time to start delivering more quality and quantity of work in the next half of the semester. I guess me and most others of the group could use excuses such as "these parts haven't arrived so i can't achieve anything yet" although i believe there is a certain amount of truth to this excuse, there are other ways i could have used my time more efficiently and I'll own up to that</p>
+    <p>Only after the break I truly understood that in terms of work commitment I had been laking before and within the holidays, and it was time to start delivering more quality and quantity of work in the next half of the semester. I guess me and most others of the group could use excuses such as "these parts haven't arrived so I can't achieve anything yet" although I believe there is a certain amount of truth to this excuse, there are other ways I could have used my time more efficiently and I'll own up to that</p>
     <p>As the first meeting of the second half of the semester approached me, Sonny and Sam were summoned before Rob, Adon and Vaughn. Plucked from the project room and sat at the meeting table we were given a rather intriguing proposition. Vaughn spoke of how he was asked from one of the higher ups within Otago Polytechnic to recreate a "Boxie" robot of the same likeness to that of the viral sensation, for the purpose of using it in the upcoming tech-week event in the next 3 weeks</p>
-    <p>Knowing that this was quite the undertaking Vaughn and Adon made sure to express that we try our best and if we don't succeed and we cant make the event, we cant make it and thats fine. With a fresh challenge albeit a formidable one we apprehensively agreed. Adon and Vaughn suggest the idea of making it with micro-controllers and raspberry pi, seems like the most logical decision to allow full customization and creation of the robot. I head back to the project room and brainstorm some ideas on how this can work in my notebook and on the net. I realize we are going to need a bunch of extra things like camera, lights, speaker etc not even to mention how long it would take to recreate the provided robot chassis and tracks from Epicenter. Understanding with first hand experience from the Farmbot group that there is no room in the time frame for that kind of budgeting or build operation I raise the point of using a red bot and android smart phone to work in tandem as two independent systems to serve the robots purpose. Although when i raise the point i find out that Vaughn and Adon have already thought of that and feel the micro controller route is better. I wont let up, knowing that the phones inherent sensors and already provided red bot is the optimal solution, i made a many points to specify that the phone could be easily tooled to take user input and display interesting content such as a face on its screen. I feel i drove the point in well enough because we are now going to use this system.</p>
+    <p>Knowing that this was quite the undertaking Vaughn and Adon made sure to express that we try our best and if we don't succeed and we cant make the event, we cant make it and thats fine. With a fresh challenge albeit a formidable one we apprehensively agreed. Adon and Vaughn suggest the idea of making it with micro-controllers and raspberry pi, seems like the most logical decision to allow full customization and creation of the robot. I head back to the project room and brainstorm some ideas on how this can work in my notebook and on the net. I realize we are going to need a bunch of extra things like camera, lights, speaker etc not even to mention how long it would take to recreate the provided robot chassis and tracks from Epicenter. Understanding with first hand experience from the Farmbot group that there is no room in the time frame for that kind of budgeting or build operation I raise the point of using a red bot and android smart phone to work in tandem as two independent systems to serve the robots purpose. Although when I raise the point I find out that Vaughn and Adon have already thought of that and feel the micro controller route is better. I wont let up, knowing that the phones inherent sensors and already provided red bot is the optimal solution, I made a many points to specify that the phone could be easily tooled to take user input and display interesting content such as a face on its screen. I feel I drove the point in well enough because we are now going to use this system.</p>
 <img src="photos/" class="img-responsive" alt="">
 <hr>
 
 <h4>Week 14</h4>
 <hr class="hr-secondary">
-    <p>After we agreed on using the smart phone, things started to look like they would fall in to place well, we had all done robotics and knew we could utilize the line following and black tape detection code for our Boxie project. Sam who had previously been in the mobile development paper and project group informed us that she had already written a survey application, with just the interactive face needing to be done i set out to re-learn android studio. I'll admit that i foolishly tooled my course of study around not doing programming papers, so i found it quite challenging to produce anything in android studio. Through the weekend I wanted to make the animation of the face and do so in an interactive and interesting way, so with all of these tools inherent in the phone i got to work. I really thought an intriguing way to make Boxie more interactive with the public was to use the camera to detect faces and respond appropriately, if Zuckerberg can do it why cant I?</p>
+    <p>After we agreed on using the smart phone, things started to look like they would fall in to place well, we had all done robotics and knew we could utilize the line following and black tape detection code for our Boxie project. Sam who had previously been in the mobile development paper and project group informed us that she had already written a survey application, with just the interactive face needing to be done I set out to re-learn android studio. I'll admit that I foolishly tooled my course of study around not doing programming papers, so I found it quite challenging to produce anything in android studio. Through the weekend I wanted to make the animation of the face and do so in an interactive and interesting way, so with all of these tools inherent in the phone I got to work. I really thought an intriguing way to make Boxie more interactive with the public was to use the camera to detect faces and respond appropriately, if Zuckerberg can do it why cant I?</p>
     <p>In todays group meeting, we were accompanied by the man who prompted the creation of this group, Nigel. we asked some rudimentary questions about Boxie's ultimate operation, but the take home message was of the same context to the first mission directive issued by Vaughn and Adon</p>
     <p>For my third professional development I was able to help explain the Farmbot project to new students of Polytechnic, giving them an insight into the Farmbot projects details and operation</p>
 <img src="photos/" class="img-responsive" alt="">
@@ -322,7 +334,7 @@
 
 <h4>Week 15</h4>
 <hr class="hr-secondary">
-    <p>Ning and sonny start to spearhead the red bot code, as they seemed to remember where there old robotics line sensing code was,  seeing as it is pretty trivial I leave it to their capable hands. Trying to make myself useful i start to work on a prototype body for Boxie, Sonny comes in to help brainstorm this task. After a few hours we compile a very basic frame its pretty rough but we get a good vibe for what we need and how to go about this. One thing is starting to get to me though, I'm having some difficulty figuring out how to hold the phone and open it back up again. I find a solution when i re-purpose the Farmbot stepper motor box by shortening it to the phones specifications.</p>
+    <p>Ning and sonny start to spearhead the red bot code, as they seemed to remember where there old robotics line sensing code was,  seeing as it is pretty trivial I leave it to their capable hands. Trying to make myself useful I start to work on a prototype body for Boxie, Sonny comes in to help brainstorm this task. After a few hours we compile a very basic frame its pretty rough but we get a good vibe for what we need and how to go about this. One thing is starting to get to me though, I'm having some difficulty figuring out how to hold the phone and open it back up again. I find a solution when I re-purpose the Farmbot stepper motor box by shortening it to the phones specifications.</p>
 <img src="photos/" class="img-responsive" alt="">
 <hr>
 
@@ -358,7 +370,7 @@
     <p>I fashion up some more cardboard peripherals to help contain the batteries on the back of dot since the last batteries where mounted on the top limiting DOT's servo motion, I then attached the new head to the new servo mount with glue. I sure hope it remains attached, its really quite perplexing to find a structurally sound solution to something made of paper on a $0 budget.</p>
     <p>After gluing the battery-pack on I ran DOT around the pen with all her limbs attached. For the most part I think it was running well enough, although, I couldn't help notice small twitches coming from the head mounted servo, that also wasn't completely center... I'm holding onto the hope it was resulting in this because the body wasn't actually fixed to the red bot frame yet. I sure hope things don't pan out in the same manner as last time.</p>
     <p>Only one thing to do now, mount the body to the chassis, thing is, I cant use zip ties. To make this unit look cleaner I'm going to glue it straight on, and theres no room for error. After triple checking the bots code and wiring I attach a small USB cable to the red bot just in case we need to make any modifications to the code, we can do so in a pinch. I warm up the glue gun and get ready for some precision gluing. The glue starts to spout out and I'm covering the supports in a small layer first, then of course, the gun starts to excrete glue out of the wrong hole. So the gun seizes up rendering the tool useless. Nevertheless there is still glue so I press the box on top and hope that it was enough to survive the showcase.</p>
-    <p>For my forth and last Professional development i complete the diversity course, it was quite insightful, many of the things taught in the course were in my earlier professional practice class</p>
+    <p>For my forth and last Professional development I complete the diversity course, it was quite insightful, many of the things taught in the course were in my earlier professional practice class</p>
 
 <img src="photos/" class="img-responsive" alt="">
 <hr>
